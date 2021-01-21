@@ -10,4 +10,7 @@ class UserDecorator < Draper::Decorator
   #     end
   #   end
 
+  def created_at
+    "#{object.created_at.strftime("%Y/%-m/%-d %I:%M%p")}に作られたんやで！"
+  end
 end
