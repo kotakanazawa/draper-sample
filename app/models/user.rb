@@ -10,7 +10,7 @@
 class User < ApplicationRecord
   has_one :profile
 
-  delegate :food, to: :profile
+  delegate :food, :age, to: :profile
   # これを delegate メソッドで使えるようにしている
   # def food
   #   profile.food
