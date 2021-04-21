@@ -11,7 +11,8 @@
 #
 # Indexes
 #
-#  index_profiles_on_user_id  (user_id)
+#  index_profiles_on_user_id         (user_id)
+#  index_profiles_on_user_id_and_id  (user_id,id) UNIQUE
 #
 # Foreign Keys
 #
